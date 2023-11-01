@@ -81,13 +81,16 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+#AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 PRODUCT_PACKAGES += \
     libshim_camera_metadata
@@ -98,8 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images_vendor \
-    product_charger_res_images_vendor
+    charger_res_images_vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -300,9 +302,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
