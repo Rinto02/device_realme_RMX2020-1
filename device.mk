@@ -20,6 +20,9 @@ $(call inherit-product, vendor/realme/RMX2020-ims/RMX2020-ims.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+#AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
