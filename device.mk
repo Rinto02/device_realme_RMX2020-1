@@ -84,6 +84,10 @@ TARGET_SCREEN_WIDTH := 720
 #AudioFx
 TARGET_EXCLUDES_AUDIOFX := true
 
+#Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
