@@ -20,9 +20,6 @@ $(call inherit-product, vendor/realme/RMX2020-ims/RMX2020-ims.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-#AudioFx
-TARGET_EXCLUDES_AUDIOFX := true
-
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -356,7 +353,7 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayRMX2020 \
     WifiResOverlayRMX2020
 
-ifneq ($(ARROW_GAPPS),true)
+ifneq ($(WITH_GMS),true)
 PRODUCT_PACKAGES += \
     ApertureQRScannerOverlayRMX2020
 endif
