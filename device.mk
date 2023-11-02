@@ -330,7 +330,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# Runtime Resource Overlays 
+# Runtime Resource Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayRMX2020 \
     CarrierConfigOverlayRMX2020 \
@@ -341,12 +341,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayRMX2020 \
     TelephonyOverlayRMX2020 \
     TetheringResOverlayRMX2020 \
-    WifiResOverlayRMX2020
-
-ifneq ($(ARROW_GAPPS),true)
-PRODUCT_PACKAGES += \
+    WifiResOverlayRMX2020 \
     ApertureQRScannerOverlayRMX2020
-endif
 
 # Seccomp
 PRODUCT_COPY_FILES += \
