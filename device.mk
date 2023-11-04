@@ -413,3 +413,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+# Kernel
+TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_DIR)/Image.gz
+
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
