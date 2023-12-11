@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2022 ArrowOS
+# Copyright (C) 2023 AfterLife
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,11 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common AfterLife stuff.
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_RMX2020
+PRODUCT_NAME := afterlife_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -26,8 +27,12 @@ PRODUCT_SYSTEM_MODEL := RMX2020
 PRODUCT_SYSTEM_NAME := RMX2020
 PRODUCT_SYSTEM_DEVICE := RMX2020
 
-# ArrowOS additions
-DEVICE_MAINTAINER := sarthakroy2002
+# AfterLife additions
+BUILD_AOSP_CAMERA := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+AFTERLIFE_CORE := true
+AFTERLIFE_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Build info

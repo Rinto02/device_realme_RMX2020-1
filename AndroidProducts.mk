@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2018-2022 ArrowOS
+# Copyright (C) 2023 AfterLife
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_RMX2020.mk
+    $(LOCAL_DIR)/afterlife_RMX2020.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_RMX2020-user \
-    arrow_RMX2020-userdebug \
-    arrow_RMX2020-eng
+    afterlife_RMX2020-user \
+    afterlife_RMX2020-userdebug \
+    afterlife_RMX2020-eng

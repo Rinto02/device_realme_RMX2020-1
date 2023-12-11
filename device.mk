@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2022 ArrowOS
+# Copyright (C) 2023 AfterLife
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -346,7 +346,7 @@ PRODUCT_PACKAGES += \
     TetheringResOverlayRMX2020 \
     WifiResOverlayRMX2020
 
-ifneq ($(ARROW_GAPPS),true)
+ifneq ($(AFTERLIFE_GAPPS),true)
 PRODUCT_PACKAGES += \
     ApertureQRScannerOverlayRMX2020
 endif
