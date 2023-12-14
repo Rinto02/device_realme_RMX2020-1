@@ -15,6 +15,12 @@ $(call inherit-product, vendor/realme/RMX2020/RMX2020-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# RealmeDirac
+$(call inherit-product, $(DEVICE_PATH)/app/RealmeDirac/dirac.mk)
+
+# RealmeParts
+$(call inherit-product, $(DEVICE_PATH)/app/RealmeParts/parts.mk)
+
 # IMS
 $(call inherit-product, vendor/realme/RMX2020-ims/RMX2020-ims.mk)
 
