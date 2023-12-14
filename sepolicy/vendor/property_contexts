@@ -1,6 +1,10 @@
 # Audio
 persist.vendor.audio.tuning.def_path           u:object_r:vendor_audio_tuning_prop:s0
 
+# Dirac
+persist.audio.dirac                           u:object_r:dirac_prop:s0
+
+
 # Camera
 vendor.oppo.camera.                            u:object_r:vendor_oplus_camera_prop:s0
 ro.vendor.oplus.camera.                        u:object_r:vendor_oplus_camera_prop:s0
