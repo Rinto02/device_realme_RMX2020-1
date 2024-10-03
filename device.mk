@@ -92,8 +92,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_camera_metadata
 
+#Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 PRODUCT_PACKAGES += \
-    overlay \
     RemoveCameraPackages \
     Aperture
 
